@@ -3,8 +3,9 @@
 <head>
     <title>Contact - Mikayla Winant</title>
     <link rel="stylesheet" href="style.css">
+    <script src="myscripts.js"></script>
 </head>
-<body onload="loadNavbar()">
+<body onload="loadNavbar(); loadFooter();">
 
     <div id="navbar-container"></div> 
 
@@ -17,6 +18,20 @@
             </a>
         </p>
     </div>
+    <h3 style="text-align: center;">Our Location</h3>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.432434821171!2d-116.80011028882274!3d47.67602127107611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5361c68f4c1ea829%3A0x83b36c7e79deb897!2sNorth%20Idaho%20College!5e0!3m2!1sen!2sus!4v1758825397332!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <div id="footer-container"></div>
 
 </body>
 </html>
