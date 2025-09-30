@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Contact - Mikayla Winant</title>
     <link rel="stylesheet" href="style.css">
-    <script src="myscripts.js"></script>
+    <script src="myscripts.js" defer></script>
 </head>
 <body onload="loadNavbar(); loadFooter();">
 
-    <div id="navbar-container"></div> 
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
 
-    <h3>Get In Touch</h3>
-    <div class="Contact">
-        <p>✉️ mwinant8@gmail.com</p>
-        <p>
-            <a href="https://www.linkedin.com/in/mikayla-winant" target="_blank">
-                LinkedIn Profile
-            </a>
-        </p>
+    <!-- Page Content -->
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, please fill out the form below.</p>
+
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Name<span style="color: blueviolet;">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email<span style="color: blueviolet;">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+            <button type="submit" class="button">Send Message</button>
+        </form>
     </div>
     <h3 style="text-align: center;">Location</h3>
 
